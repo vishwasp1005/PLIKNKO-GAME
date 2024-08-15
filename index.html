@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav"></div>
+
+      <div class="hero">
+        <div class="bet">
+            <div class="btns">
+                    <button class="manual">Manual</button>
+                    <button class="auto">Auto</button>
+            </div>
+
+            <div class="bet-amount">
+                <h4>Bet Amount</h4>
+                <br />
+               
+
+                <div class="bet-input">
+                    <input class="betinp" type="text" value="0.00000000" /><i class="fa-brands fa-bitcoin" style="color: #FFD43B;"></i>
+                    <button class="half">½</button>
+                    <p class="liti">|</p>
+                    <button class="dbl">2x</button>
+                </div>
+
+                <div class="risk">
+                  <h4>Risk</h4>
+                  <select class="riskdrop">
+                    <option value="easy">Easy</option>
+                    <option value="med" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </div>
+
+                <div class="rows">
+                  <h4>Rows</h4>
+                  <select class="rowdrop">
+                    <option id="8">8</option>
+                    <option id="9">9</option>
+                    <option id="10">10</option>
+                    <option id="11">11</option>
+                    <option id="12">12</option>
+                    <option id="13">13</option>
+                    <option id="14">14</option>
+                    <option id="15">15</option>
+                    <option id="16" selected>16</option>
+                  </select>
+                </div>
+
+                <div class="betbtn">
+                  <button class="btnofbet">Bet</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="board" class="board">
+          <div id="canvas"></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>    
+    <script src="dots.js"></script>
+    <script src="particle.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

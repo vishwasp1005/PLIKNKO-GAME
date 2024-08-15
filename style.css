@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    height: 3.7rem;
+    width: 100%;
+    /* border: 2px solid orange; */
+    background-color: #1a2c38;
+    background-image: url("https://see.fontimg.com/api/renderfont4/PxlZ/eyJyIjoiZnMiLCJoIjoxMTAsInciOjEyNTAsImZzIjo4OCwiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiMzNTNENEIiLCJ0IjoxfQ/UGxpbmtv/quick-kiss-personal-use.png");
+    background-repeat: no-repeat;
+    background-size: 130px 40px;
+    background-position: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+
+.hero{
+    background-color: #1a2c38;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.bet{
+    margin-top: 3%;
+    height: 92%;
+    width: 22%;
+    /* border: 2px solid black; */
+    background-color: #213743;
+    border-radius: 10px 0px 0px 10px;
+}
+.board{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    height: 92%;
+    width: 74%;
+    /* border: 2px solid purple; */
+    background-color: #071d2a;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.btns{
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    height: 10%;
+    background-color: #071d2a;
+    width: 90%;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.manual{
+    height: 82%;
+    width: 46%;
+    background-color: #2f4553; 
+    color: white;
+    border: none; 
+    border-radius: 50px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+    transition: background-color 0.2s;
+    font-weight: 600;
+}
+
+.auto{
+    height: 82%;
+    background-color: #071d2a;
+    width: 46%;
+    /* background-color: #2f4553;  */
+    color: white;
+    border: none; 
+    border-radius: 50px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.2s;
+    font-weight: 600;
+}
+
+.auto:hover {
+    background-color: #2f4553; 
+}
+
+
+.bet-amount{
+    margin-top: 7%;
+    width: 96%;
+    height: 15%;
+}
+
+.betinp{
+    margin-left: 5%;
+    background-color: #0f212e;
+    height: 95%;
+    border: 3px solid #2f4553;
+    width: 90%;
+    outline: none;
+    padding: 12px;
+    padding-right: 30px;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 8px 0 0 8px;
+    /* border: none; */
+}
+
+.betinp:hover{
+    border: 3px solid #59666e;
+}
+
+
+.bet-amount h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #b1bad3;
+    margin-left: 5%;
+    margin-bottom: -15px;
+    font-weight: 600;
+}
+
+.bet-input{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.dbl{
+    height: 95%;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #2f4553;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    color: white;
+}
+
+.half{
+    height: 95%;
+    width: 20%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2f4553;
+    border: none;
+    color: white;
+}
+
+.dbl:hover{
+    background-color: #557086;
+    transition: background-color 0.25s;
+}
+.half:hover{
+    background-color: #557086;
+    transition: background-color 0.25s;
+}
+
+.liti{
+    font-size: 25px;
+    padding-top: 3px;
+    height: 95%;
+    background-color: #2f4553;
+    color: #0f212e;
+    font-weight: 700;
+}
+
+.fa-bitcoin {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #FFD43B; 
+    padding-right: 90px;
+    font-size: large;
+}
+
+.riskdrop{
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: #0f212e;
+    height: 95%;
+    border: 3px solid #2f4553;
+    width: 95%;
+    outline: none;
+    padding:10px;
+    padding-right: 30px;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 8px 8px 8px 8px;
+    /* border: none; */
+}
+
+.risk h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #b1bad3;
+    margin-left: 5%;
+    margin-bottom: -30px;
+    font-weight: 600;
+    margin-top: 6%;
+}
+
+option {
+    background-color: #0f212e;
+}
+
+.riskdrop:hover{
+    border: 3px solid #59666e;
+}
+
+.rowdrop{
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: #0f212e;
+    height: 95%;
+    border: 3px solid #2f4553;
+    width: 95%;
+    outline: none;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 8px 8px 8px 8px;
+    /* border: none; */
+}
+
+.rows h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #b1bad3;
+    margin-left: 5%;
+    margin-bottom: -30px;
+    font-weight: 600;
+    margin-top: 6%;
+}
+
+option {
+    background-color: #0f212e;
+}
+
+.rowdrop:hover{
+    border: 3px solid #59666e;
+}
+
+.betbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+        /* background-color: #fff; */
+    margin-top: 5%;
+    border: none;
+}
+
+.btnofbet{
+    height: 100%;
+    width: 90%;
+    background-color: #00e701;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btnofbet:hover{
+    background-color:rgba(31, 255, 32);
+}
